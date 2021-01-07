@@ -1,0 +1,489 @@
+.workProccess {
+    .workProcces__list {
+        position: relative;
+        z-index: 1;
+        .line {
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            left: 420px;
+            top: 180px;
+            img {
+                z-index: 1;
+            }
+        }
+        .workProcces__list-item {
+            display: flex;
+            align-items: start;
+            width: 75%;
+            justify-content: space-between;
+            z-index: 10 !important;
+            background: $white;
+            margin-top: 2rem;
+            &:nth-child(1) {
+                .descr {
+                    .number {
+                        font-size: 110px;
+                        font-weight: bold;
+                        position: relative;
+                        color: $blue;
+                        &:before {
+                            font-weight: bold;
+                            content: '1.';
+                            font-size: 110px;
+                            color: $main-black;
+                            position: absolute;
+                            top: -7px;
+                            left: -5px;
+                        }
+                    }
+                }
+            }
+            &:nth-child(7) {
+                margin-top: 0;
+            }
+            &:nth-child(8) {
+                width: 84% !important;
+                margin-left: 120px !important;
+                margin-top: 0;
+                .descr {
+                    .number {
+                        font-size: 110px;
+                        font-weight: bold;
+                        position: relative;
+                        color: $blue;
+                        &:before {
+                            font-weight: bold;
+                            content: '8.';
+                            font-size: 110px;
+                            color: $main-black;
+                            position: absolute;
+                            top: -7px;
+                            left: -5px;
+                        }
+                    }
+                }
+            }
+            &:nth-child(2n) {
+                margin-left: 200px;
+                flex-direction: row-reverse;
+                width: 70%;
+            }
+            &:nth-child(2) {
+                width: 73%;
+                margin-top: -2rem;
+                margin-left: 260px;
+                .descr {
+                    p {
+                        max-width: 467px;
+                    }
+                }
+            }
+            &:nth-child(5) {
+                width: 76%;
+            }
+            &:nth-child(6) {
+                margin-left: 240px;
+                width: 75%;
+            }
+
+            .img {
+                z-index: 10 !important;
+            }
+            .descr {
+                z-index: 10 !important;
+                .number {
+                    font-weight: bold;
+                    font-size: 60px;
+                }
+                .workProcces__list-title {
+                    font-size: 30px;
+                    color: $main-black;
+                }
+                p {
+                    font-size: 15px;
+                    color: $main-black;
+                    letter-spacing: 0.6px;
+                    max-width: 413px;
+                    min-width: 413px;
+                }
+            }
+        }
+    }
+}
+.mob__txt {
+    display: none;
+}
+@media(max-width: 1200px) {
+    .workProccess {
+        .workProcces__list {
+            .line {
+                display: none;
+            }
+            .workProcces__list-item {
+                display: flex;
+                align-items: start;
+                width: 100%;
+                justify-content: space-between;
+                z-index: 10 !important;
+                background: $white;
+                margin-top: 2rem;
+                &:nth-child(1) {
+                    .descr {
+                        .number {
+                            font-size: 110px;
+                            font-weight: bold;
+                            position: relative;
+                            color: $blue;
+                            &:before {
+                                font-weight: bold;
+                                content: '1.';
+                                font-size: 110px;
+                                color: $main-black;
+                                position: absolute;
+                                top: -7px;
+                                left: -5px;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(7) {
+                    margin-top: 2rem;
+                }
+                &:nth-child(8) {
+                    width: 100% !important;
+                    margin-left: 0px !important;
+                    margin-top: 2rem;
+                    .descr {
+                        .number {
+                            font-size: 110px;
+                            font-weight: bold;
+                            position: relative;
+                            color: $blue;
+                            &:before {
+                                font-weight: bold;
+                                content: '8.';
+                                font-size: 110px;
+                                color: $main-black;
+                                position: absolute;
+                                top: -7px;
+                                left: -5px;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2n) {
+                    margin-left: 0;
+                    flex-direction: row-reverse;
+                    width: 100%;
+                }
+                &:nth-child(2) {
+                    width: 100%;
+                    margin-top: 2rem;
+                    margin-left: 0;
+                    .descr {
+                        p {
+                            max-width: 467px;
+                        }
+                    }
+                }
+                &:nth-child(5) {
+                    width: 100%;
+                }
+                &:nth-child(6) {
+                    margin-left: 0;
+                    width: 100%;
+                }
+    
+                .img {
+                    z-index: 10 !important;
+                }
+                .descr {
+                    z-index: 10 !important;
+                    .number {
+                        font-weight: bold;
+                        font-size: 60px;
+                    }
+                    .workProcces__list-title {
+                        font-size: 30px;
+                        color: $main-black;
+                    }
+                    p {
+                        font-size: 15px;
+                        color: $main-black;
+                        letter-spacing: 0.6px;
+                        max-width: 413px;
+                        min-width: 413px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 950px) {
+    .workProccess {
+        .workProcces__list {
+            .line {
+                display: none;
+            }
+            .workProcces__list-item {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+                z-index: 10 !important;
+                background: $white;
+                margin-top: 2rem;
+                .img {
+                    width: 30%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                &:nth-child(1) {
+                    .descr {
+                        .number {
+                            font-size: 60px;
+                            font-weight: bold;
+                            position: relative;
+                            color: $blue;
+                            &:before {
+                                font-weight: bold;
+                                content: '1.';
+                                font-size: 60px;
+                                color: $main-black;
+                                position: absolute;
+                                top: -6px;
+                                left: -4px;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(7) {
+                    margin-top: 2rem;
+                }
+                &:nth-child(8) {
+                    width: 100% !important;
+                    margin-left: 0px !important;
+                    margin-top: 2rem;
+                    .descr {
+                        .number {
+                            font-size: 60px;
+                            font-weight: bold;
+                            position: relative;
+                            color: $blue;
+                            &:before {
+                                font-weight: bold;
+                                content: '8.';
+                                font-size: 60px;
+                                color: $main-black;
+                                position: absolute;
+                                top: -5px;
+                                right: 4px;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2n) {
+                    margin-left: 0;
+                    flex-direction: row-reverse;
+                    width: 100%;
+                    .descr {
+                        text-align: right;
+                        p {
+                            text-align: right;
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    width: 100% !important;
+                    justify-content: space-between !important;
+                    margin-top: 2rem;
+                    margin-left: 0;
+                    .descr {
+                        width: 60%;
+                        p {
+                            max-width: 100%;
+                            min-width: 100%;
+                        }
+                    }
+                }
+                &:nth-child(5) {
+                    width: 100%;
+                }
+                &:nth-child(6) {
+                    margin-left: 0;
+                    width: 100%;
+                }
+    
+                .img {
+                    z-index: 10 !important;
+                }
+                .descr {
+                    z-index: 10 !important;
+                    width: 60%;
+                    .number {
+                        font-weight: bold;
+                        font-size: 40px;
+                    }
+                    .workProcces__list-title {
+                        font-size: 24px;
+                        color: $main-black;
+                    }
+                    p {
+                        margin-top: 10px;
+                        font-size: 13px;
+                        color: $main-black;
+                        letter-spacing: 0.6px;
+                        max-width: 100%;
+                        min-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 600px) {
+    .workProccess {
+        .desktop__txt {
+            display: none;
+        }
+        .mob__txt {
+            display: block;
+        }
+        .workProcces__list {
+            .line {
+                display: none;
+            }
+            .workProcces__list-item {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+                z-index: 10 !important;
+                background: $white;
+                margin-top: 0rem !important;
+                .img {
+                    width: 30%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                &:nth-child(1) {
+                    .descr {
+                        .number {
+                            font-size: 50px;
+                            font-weight: bold;
+                            position: relative;
+                            color: $blue;
+                            height: 50px;
+                            &:before {
+                                font-weight: bold;
+                                content: '1.';
+                                font-size: 50px;
+                                color: $main-black;
+                                position: absolute;
+                                top: -6px;
+                                left: -4px;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(7) {
+                    margin-top: 1rem;
+                }
+                &:nth-child(8) {
+                    width: 100% !important;
+                    margin-left: 0px !important;
+                    margin-top: 1rem;
+                    .descr {
+                        .number {
+                            font-size: 50px;
+                            font-weight: bold;
+                            position: relative;
+                            color: $blue;
+                            height: 50px;
+                            &:before {
+                                font-weight: bold;
+                                content: '8.';
+                                font-size: 50px;
+                                color: $main-black;
+                                position: absolute;
+                                top: -5px;
+                                right: 4px;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2n) {
+                    margin-left: 0;
+                    flex-direction: row-reverse;
+                    width: 100%;
+                    .descr {
+                        text-align: right;
+                        width: 80% !important;
+                        p {
+                            text-align: right;
+                            max-width: 100%;
+                            min-width: 100%;
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    width: 100% !important;
+                    justify-content: space-between !important;
+                    margin-top: 1rem;
+                    margin-left: 0;
+                    .descr {
+                        width: 60%;
+                        p {
+                            max-width: 100%;
+                            min-width: 100%;
+                        }
+                    }
+                }
+                &:nth-child(5) {
+                    width: 100%;
+                }
+                &:nth-child(6) {
+                    margin-left: 0;
+                    width: 100%;
+                }
+    
+                .img {
+                    z-index: 10 !important;
+                }
+                .descr {
+                    z-index: 10 !important;
+                    width: 70%;
+                    .number {
+                        font-weight: bold;
+                        font-size: 40px;
+                        height: 40px;
+                    }
+                    .workProcces__list-title {
+                        font-size: 18px;
+                        color: $main-black;
+                        margin-top: 0 !important;
+                    }
+                    p {
+                        margin-top: 3px;
+                        font-size: 11px;
+                        color: $main-black;
+                        letter-spacing: 0.6px;
+                        max-width: 100%;
+                        min-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+.closeModalsBtn {
+    position: fixed;
+    top: 15px;
+    right:30px;
+    width: 33px;
+    height: 33px; 
+    z-index: 100000; 
+    cursor: pointer;
+    display: none;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        height: 3px;
+        display: block;
+        width: 100%;
+        background-color: $rose;
+        transition: .2s ease-in-out;
+    }
+    &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        display: block;
+        content: '';
+        height: 3px;
+        width: 100%;
+        background-color: $rose;
+        transition: .2s ease-in-out;
+    }
+    &:hover {
+        &::before {
+            background-color: $blue;
+        }
+        &::after {
+            background-color: $blue;
+        }
+    }
+}
+.modal__body {
+    width: 90vw;
+    max-width: 920px;
+    height: 100%;
+    .video__overlay {
+        width: 100%;
+        iframe {
+            width: 100% !important; 
+            height: 460px !important;
+            .vp-center {
+                width: 100%;
+                .player {
+                    width: 100% !important;
+                    min-width: 100% !important;
+                    max-width: 100% !important;
+                    height: auto !important;
+                }
+            }
+        }
+    }
+    .ModalName {
+        align-items: flex-end;
+        display: flex;
+        margin-top: 1rem;
+        height: 40px;
+        .name {
+            font-size: 38px;
+            line-height: 36px;
+            font-weight: bold;
+            letter-spacing: 0.95px;
+            color: $main-black
+        }
+        .promo {
+            margin-left: .5rem;
+            font-size: 27px;
+            line-height: 27px;
+            font-weight: bold;
+            color: #3c3c3c;
+        }
+    }
+    .descr {
+        width: 70%;
+        margin-top: 1rem;
+
+    }
+    .task {
+        margin-top: 1.5rem;
+    }
+    .ModalSlider_wrapper {
+        padding-bottom: 1rem;
+    }
+    .modal__title {
+        font-size: 25px;
+        font-weight: 600;
+        color: #3c3c3c;
+    }
+    p {
+        font-size: 20px;
+        color: $main-black;
+        margin-top: 1rem;
+    }
+    ol { 
+
+        li {
+            font-size: 20px;
+            margin-top: .5rem;
+            color: $main-black;
+            margin-left: 4rem;
+        }
+    }
+    .decision {
+        margin-top: 1.5rem;
+    }
+    .ModalSlider_wrapper {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .modalSlider {
+            width: 60%;
+            overflow: visible !important;
+        }
+
+    }
+}

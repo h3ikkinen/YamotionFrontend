@@ -1,0 +1,128 @@
+.title {
+    font-size: 40px;
+    font-weight: 500;
+    display: block;
+    font-weight: 600;
+    color: $main-black;
+    margin-bottom: 4rem;
+    letter-spacing: 1.6px;
+    line-height: 130%;
+    .title__before {
+        font-weight: 600;
+        position: relative;
+        color: $main-black;
+        &_txt {
+            font-weight: 600;
+            position: relative;
+            z-index: 2;
+            color: $main-black;
+            letter-spacing: 1.6px;
+        }
+        .before-rose {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 30px;
+            width: calc(100% + 10px);
+            transform: translate(-5px, 5px);
+            background: $rose;
+        }
+    }
+}
+.banner__title {
+    font-weight: 600;
+    font-size: 19px;
+    color: $main-black;
+}
+.form__title {
+    font-size: 27px;
+    color: $title-black;
+    font-weight: bold;
+}
+.mob_br {
+    display: none;
+}
+@media (max-width: 950px ) {
+    .form__title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .banner__title {
+        font-weight: 600;
+        font-size: 15px;
+        color: $main-black;
+    }
+    .title {
+        font-size: 30px;
+        margin-bottom: 3rem;
+        .title__before {
+            .before-rose {
+                height: 20px;
+                transform: translate(-5px, 2px);
+            }
+        }
+    }
+}
+@media (max-width: 768px ) {
+    .banner__title {
+        font-weight: 600;
+        font-size: 15px;
+        color: $main-black;
+    }
+    .title {
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 2rem;
+        .title__before {
+          
+            .before-rose {
+                width: calc(100% + 5px);
+                height: 14px;
+                transform: translate(-2.5px, 2px);
+            }
+        }
+    }
+}
+@media (max-width: 450px ) {
+    .banner__title {
+        font-weight: 600;
+
+        font-size: 12px;
+        color: $main-black;
+    }
+    .title {
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: 2rem;
+        .title__before {
+            .before-rose {
+                width: calc(100% + 5px);
+                height: 12px;
+                transform: translate(-2.5px, 2px);
+            }
+        }
+    }
+
+    .mob_br {
+        display: block;
+    }
+}
+@media (max-width: 350px ) {
+    .banner__title {
+        font-weight: 600;
+        font-size: 12px;
+        color: $main-black;
+    }
+    .title {
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 2rem;
+        .title__before {
+            .before-rose {
+                width: calc(100% + 5px);
+                height: 12px;
+                transform: translate(-2.5px, 2px);
+            }
+        }
+    }
+}

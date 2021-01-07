@@ -1,0 +1,45 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 220px;
+    padding: 0 15px;
+    transition: .4s ease-in-out;
+    span {
+        font-size: 15px;
+        transition: .4s ease-in-out;
+        svg {
+            height: 12px;
+            margin-left: -1rem;
+            animation: arrowTransform infinite 1s;
+            path {
+                transition: .4s ease-in-out;
+            }
+        }
+    }
+    &.bgRose {
+        background-color: $rose;
+        span {
+            color: $main-black;
+        }
+        &:hover {
+            background-color: $blue;
+            span {
+                color: $white;
+                svg {
+                    path {
+                        stroke: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        height: 40px;
+        width: 180px;
+    }
+}

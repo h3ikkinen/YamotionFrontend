@@ -1,0 +1,48 @@
+@import 'common.scss';
+
+* {
+    padding: 0;
+    margin: 0; 
+    font-weight: 500;
+    box-sizing: border-box;
+    transition: .2s ease-in-out;
+}
+html {
+    overflow-x: hidden !important;
+    width: 100%;
+}
+body {
+    overflow-x: hidden !important;
+    width: 100%;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: $main-black;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+@media (max-width: 1200px) {
+    .container {
+        width: 900px;
+    }
+}
+@media (max-width: 950px) {
+    .container {
+        width: 700px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90vw;
+    }
+}
+button {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none;
+    cursor: pointer;
+}

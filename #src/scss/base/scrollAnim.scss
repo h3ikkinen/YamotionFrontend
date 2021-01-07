@@ -1,0 +1,63 @@
+.leftAnim {
+    visibility: hidden;
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: .4s ease-in-out;
+    &._active {
+        visibility: visible;
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.downAnim {
+    visibility: hidden;
+    transform: translateY(-50px);
+    opacity: 0;
+    &._active {
+        visibility: visible;
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.rightAnim {
+    visibility: hidden;
+    transform: translateX(50px);
+    opacity: 0;
+    transition: .4s ease-in-out;
+    &._active {
+        visibility: visible;
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.scaleToBig {
+    transform: scale(.5);
+    transition: .4s ease-in-out;
+    &._active {
+        transform: scale(1);
+    }
+}
+.ts-3 {
+    transition: .3s all;
+}
+.ts-4 {
+    transition: .4s all;
+}
+.ts-5 {
+    transition: .5s all;
+}
+.ts-6 {
+    transition: .6s all;
+}
+.ts-7 {
+    transition: .7s all;
+}
+.ts-8 {
+    transition: .8s all;
+}
+.ts-9 {
+    transition: .9s all;
+}
+.ts-10 {
+    transition: 1s all;
+}

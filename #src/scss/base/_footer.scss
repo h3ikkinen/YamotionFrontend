@@ -1,0 +1,245 @@
+.footer {
+    padding: 2rem 0;
+    background: $blue;
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        color: $white;
+        .item{
+            margin-right: 4rem;
+            margin-left: 4rem;
+        }
+        .logo {
+            margin-top: 1rem;
+        }
+        span {
+            color: $white;
+            font-size: 13px;
+        }
+        svg {
+            height: 14px;
+            width: 16px;
+            fill: $white;
+        }
+        .contacts {
+            a {
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                .email_icon {
+                    margin-right: 5px;
+                    display: flex;
+                    align-items: center;justify-content: center;
+                }
+            }
+        }
+        .social {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            a {
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                span {
+                    &.svg {
+                        margin-right: 5px;
+                        display: flex;
+                        align-items: center;justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .footer {
+        padding: 1.5rem 0;
+        background: $blue;
+        &__container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            color: $white;
+            .item{
+                margin-right: 2rem;
+                margin-left: 2rem;
+            }
+            .logo {
+                margin-top: 1rem;
+                img {
+                    transform: scale(0.9);
+                }
+            }
+            span {
+                color: $white;
+                font-size: 13px;
+            }
+            svg {
+                height: 14px;
+                width: 16px;
+                fill: $white;
+            }
+            .contacts {
+                a {
+                    margin-top: 1rem;
+                    display: flex;
+                    align-items: center;
+    
+                }
+            }
+            .social {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                a {
+                    margin-top: 1rem;
+                    display: flex;
+                    align-items: center;
+                    span {
+                        &.svg {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 950px) {
+    .footer {
+        padding: 1rem 0;
+        background: $blue;
+        &__container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            color: $white;
+            h2 {
+                font-size: 16px;
+            }
+            .item{
+                margin-right: 0rem;
+                margin-left: 0rem;
+            }
+            .logo {
+                margin-top: 1rem;
+                img {
+                    transform: scale(0.7);
+                }
+            }
+            span {
+                color: $white;
+                font-size: 13px;
+            }
+            svg {
+                height: 14px;
+                width: 16px;
+                fill: $white;
+            }
+            .contacts {
+                a {
+                    margin-top: 1rem;
+                    display: flex;
+                    align-items: center;
+    
+                }
+            }
+            .social {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                a {
+                    margin-top: 1rem;
+                    display: flex;
+                    align-items: center;
+                    span {
+                        &.svg {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .footer {
+        padding: 1rem 0;
+        background: $blue;
+        &__container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            color: $white;
+            padding: 1rem 0;
+            position: relative;
+            h2 {
+                font-size: 15px;
+            }
+            span {
+                color: $white;
+                font-size: 10px;
+            }
+            svg {
+                height: 14px;
+                width: 16px;
+                fill: $white;
+            }
+            picture {
+                width: 70%;
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translateX(-50%);
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+               
+            }
+            .contacts {
+                margin-top: 3.5rem;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                a {
+                    margin-top: 1rem;
+                    display: flex;
+                    align-items: center;
+                    span {
+                        font-size: 11px;
+                
+                    }
+                    .email_icon {
+                        margin-right: 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+            .social {
+                margin-top: 3.5rem;
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                a {
+                    margin-top: 1rem;
+                    display: flex;
+                    align-items: center;
+                    span {
+                        font-size:11px;
+                    }
+                    span {
+                        &.svg {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

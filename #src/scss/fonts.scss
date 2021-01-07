@@ -1,0 +1,22 @@
+@include font("Stolzl", "Stolzl-Bold", "700", "normal");
+@include font("Stolzl", "Stolzl-Book", "400", "normal");
+@include font("Stolzl", "Stolzl-Regular", "500", "normal");
+@include font("Stolzl", "Stolzl-Light", "300", "normal");
+@include font("Stolzl", "Stolzl-Thin", "200", "normal");
+@include font("Stolzl", "Stolzl-Medium", "600", "normal");
+
+@font-face {font-family: "Gill Sans";
+    src: url("http://db.onlinewebfonts.com/t/e35b2e7467dec8d9ee2163558012da0b.eot"); /* IE9*/
+    src: url("http://db.onlinewebfonts.com/t/e35b2e7467dec8d9ee2163558012da0b.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("http://db.onlinewebfonts.com/t/e35b2e7467dec8d9ee2163558012da0b.woff2") format("woff2"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/e35b2e7467dec8d9ee2163558012da0b.woff") format("woff"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/e35b2e7467dec8d9ee2163558012da0b.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("http://db.onlinewebfonts.com/t/e35b2e7467dec8d9ee2163558012da0b.svg#Gill Sans") format("svg"); /* iOS 4.1- */
+}
+
+
+* {
+    font-family: "Stolzl";
+    font-weight: 400;
+    font-style: normal;
+}
